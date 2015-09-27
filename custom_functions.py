@@ -1,12 +1,8 @@
 import re
 
 
-def data_columns(data, activity):
-    return [column for column in data.columns if re.match(activity, column)]
-
-
 def ave_time(data, activity):
-    cols = data_columns(data, activity)
+    cols = [column for column in data.columns if re.match(activity, column)]
     activity_data = data[cols]
     activity_sum = activity_data.sum(axis=1)
     data = data[['stat_weight']]
