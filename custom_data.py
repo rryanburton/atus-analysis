@@ -22,6 +22,7 @@ renamed_cols = {
     'TRERNWA': 'weekly_earnings',  # the maximum value cannot be greater than 2884.61)
     'TRCHILDNUM': 'num_of_children',
     'TRSPFTPT': 'spouse_ft_pt',
+
     'TEHRUSLT': 'weekly_hours',
     'TUDIARYDAY': 'interview_day_of_week',  # 1 = sun - 7 = sat
     'TRHOLIDAY': 'interview_on_holiday',
